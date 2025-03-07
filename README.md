@@ -17,10 +17,7 @@ Gunakan perintah berikut untuk menginstal pustaka yang diperlukan:
 pip install numpy pandas scipy matplotlib seaborn jupyter
 ```
 ```bash
-pip install streamlit
-```
-```bash
-pip install babel
+pip install streamlit babel
 ```
 
 ### 2️⃣ **Struktur Direktori**  
