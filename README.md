@@ -20,7 +20,7 @@ pip install numpy pandas scipy matplotlib seaborn jupyter
 pip install streamlit
 ```
 ```bash
-pip install streamlit babel
+pip install babel
 ```
 
 ### 2️⃣ **Struktur Direktori**  
