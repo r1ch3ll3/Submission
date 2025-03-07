@@ -38,3 +38,10 @@ Gunakan perintah berikut di terminal atau command prompt:
 python dashboard.py
 ```
 
+### 3️⃣ **Jalankan Streamlit** 
+```sh
+streamlit run dashboard.py
+```
+
+### 4️⃣ Akses Dashboard di Browser
+
