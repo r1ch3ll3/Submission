@@ -19,7 +19,10 @@ Pastikan struktur direktori proyek seperti berikut:
  ┣ 📜 requirements.txt
  ┣ 📂 data
  ┃ ┗ 📜 day.csv
+   ┗ 📜 hour.csv
+ ┣ 📜 Notebook.ipynb
  ┣ 📜 README.md
+ ┣ 📜 requirement.txt
 ```
 - `app.py` → File utama untuk menjalankan dashboard.  
 - `day.csv` → Dataset yang berisi data penyewaan sepeda harian.  
