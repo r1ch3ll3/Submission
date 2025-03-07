@@ -6,7 +6,7 @@ Dashboard ini dikembangkan menggunakan **Streamlit**, **Pandas**, **Matplotlib**
 Sebelum menjalankan proyek ini, pastikan Anda telah menginstal semua pustaka yang diperlukan. 
 ✅ **Python**   
 ✅ **Pandas**  
-✅ **Matplotlib**  
+✅ **Matplotlib** 
 ✅ **Streamlit** 
 ✅ **Seaborn**  
 ✅ **Babel**
@@ -14,7 +14,13 @@ Sebelum menjalankan proyek ini, pastikan Anda telah menginstal semua pustaka yan
 ### 1️⃣ **Instalasi Library yang Dibutuhkan**  
 Gunakan perintah berikut untuk menginstal pustaka yang diperlukan:  
 ```bash
-pip install streamlit pandas matplotlib seaborn babel
+pip install numpy pandas scipy matplotlib seaborn jupyter
+```
+```bash
+pip install streamlit
+```
+```bash
+pip install streamlit babel
 ```
 
 ### 2️⃣ **Struktur Direktori**  
