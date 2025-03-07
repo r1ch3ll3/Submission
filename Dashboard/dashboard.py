@@ -34,7 +34,7 @@ def create_monthly_rentals_df(df):
     return monthly_df
 
 # Load dataset
-bike_df = pd.read_csv(r"C:\Submission\Dashboard\day.csv")
+bike_df = pd.read_csv("Dashboard/day.csv")
 
 # Konversi tanggal
 bike_df['dteday'] = pd.to_datetime(bike_df['dteday'])
