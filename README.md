@@ -3,7 +3,13 @@
 Dashboard ini dikembangkan menggunakan **Streamlit**, **Pandas**, **Matplotlib**, dan **Seaborn** untuk menganalisis data penyewaan sepeda berdasarkan berbagai faktor seperti tanggal, kondisi cuaca, hari dalam seminggu, dan bulan.  
 
 ## 📌 **Persyaratan**  
-Sebelum menjalankan proyek ini, pastikan Anda telah menginstal semua pustaka yang diperlukan.  
+Sebelum menjalankan proyek ini, pastikan Anda telah menginstal semua pustaka yang diperlukan. 
+✅ **Python**   
+✅ **Pandas**  
+✅ **Matplotlib**  
+✅ **Streamlit** 
+✅ **Seaborn**  
+✅ **Babel**
 
 ### 1️⃣ **Instalasi Library yang Dibutuhkan**  
 Gunakan perintah berikut untuk menginstal pustaka yang diperlukan:  
