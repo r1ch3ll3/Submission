@@ -76,7 +76,7 @@ Pastikan struktur direktori proyek seperti berikut:
 
 
 ## 🌍 Akses Dashboard
-Setelah menjalankan perintah di atas, 🖥️ Streamlit akan memberikan URL lokal (https://wquqvx6ddfpbvkykbesyzw.streamlit.app/).
+Setelah menjalankan perintah di atas, 🖥️ Streamlit akan memberikan URL lokal (https://submission-7pbvuqxwfjh5ehsxcmredn.streamlit.app/).
 Buka URL tersebut di  browser untuk melihat dashboard 🚲.  
 
 ---
