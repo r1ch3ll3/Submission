@@ -1,31 +1,43 @@
 # 🚴‍♂️ Bike Sharing Dashboard dengan Streamlit  
 
-Dashboard ini dikembangkan menggunakan **Streamlit**, **Pandas**, **Matplotlib**, dan **Seaborn** untuk menganalisis data penyewaan sepeda berdasarkan berbagai faktor seperti tanggal, kondisi cuaca, hari dalam seminggu, dan bulan.  
+Dashboard ini dikembangkan menggunakan untuk menganalisis data penyewaan sepeda berdasarkan berbagai faktor seperti tanggal, kondisi cuaca, hari kerja, hari libur, dan bulan. Dashboard ini dibangun menggunakan  Streamlit,  Pandas,  Matplotlib, dan  Seaborn.
 
 ## 📌 **Persyaratan**  
-Sebelum menjalankan proyek ini, pastikan Anda telah menginstal semua pustaka yang diperlukan. 
-✅ **Python**   
-✅ **Pandas**  
-✅ **Matplotlib** 
-✅ **Streamlit** 
-✅ **Seaborn**  
-✅ **Babel**
+## Setup Environment - Shell/Terminal
+```bash
+mkdir submission
+cd submission
+pipenv install
+pipenv shell
+pip install -r requirements.txt
+```
+Sebelum menjalankan 🚀 aplikasi, pastikan Anda telah menginstal 📥 dependensi berikut:
+
+**🐍 Python 3.x**
+
+**🖥️ Streamlit**
+
+**🐼 Pandas**
+
+**📈 Matplotlib**
+
+**📊 Seaborn**
+
+**🌍 Babel**
+
 
 ### 1️⃣ **Instalasi Library yang Dibutuhkan**  
 Gunakan perintah berikut untuk menginstal pustaka yang diperlukan:  
 ```bash
-pip install numpy pandas scipy matplotlib seaborn jupyter
-```
-```bash
-pip install streamlit babel
+pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel 
 ```
 
 ### 2️⃣ **Struktur Direktori**  
 Pastikan struktur direktori proyek seperti berikut:  
 ```
 📂 Bike-Sharing-Dashboard
- ┣ 📜 app.py
- ┣ 📜 requirements.txt
+ ┣ 📜 dashboard.py
+ ┣ 📜 day.csv
  ┣ 📂 data
  ┃ ┗ 📜 day.csv
    ┗ 📜 hour.csv
@@ -33,32 +45,39 @@ Pastikan struktur direktori proyek seperti berikut:
  ┣ 📜 README.md
  ┣ 📜 requirement.txt
 ```
-- `app.py` → File utama untuk menjalankan dashboard.  
+- `dashboard.py` → File utama untuk menjalankan dashboard.  
 - `day.csv` → Dataset yang berisi data penyewaan sepeda harian.  
-- `README.md` → Panduan penggunaan.  
+- `requirement.text` library yang diperlukan
 
 ### 3️⃣ **Menjalankan Dashboard**  
-Gunakan perintah berikut untuk menjalankan aplikasi **Streamlit**:  
-```bash
-streamlit run app.py
-```
-Setelah itu, **dashboard akan terbuka di browser secara otomatis**.  
 
-## 📊 **Fitur Dashboard**  
-1️⃣ **Filter Rentang Waktu** → Memungkinkan pengguna memilih periode waktu yang ingin dianalisis.  
-2️⃣ **Statistik Utama** → Menampilkan total penyewaan & rata-rata penyewaan per hari.  
-3️⃣ **Grafik Tren Harian** → Menampilkan jumlah penyewaan sepeda berdasarkan tanggal.  
-4️⃣ **Analisis Cuaca** → Menunjukkan pengaruh kondisi cuaca terhadap jumlah penyewaan.  
-5️⃣ **Analisis Hari dalam Seminggu** → Menampilkan pola penyewaan berdasarkan hari.  
-6️⃣ **Analisis Bulanan** → Melihat tren penyewaan berdasarkan bulan.  
+1.  **Clone Repositori Ini:**
+    ```bash
+    git clone <https://github.com/R1ch3ll3/Submission>
+    cd <nama_repositori_Anda>
+    ```
 
-## 📁 **Dataset**  
-Dataset yang digunakan adalah `day.csv`, yang berisi beberapa kolom penting seperti:  
-- `dteday` → Tanggal transaksi penyewaan.  
-- `cnt` → Jumlah total penyewaan sepeda.  
-- `weathersit` → Kondisi cuaca (1 = Cerah, 2 = Berawan, 3 = Hujan).  
-- `weekday` → Hari dalam seminggu (0 = Minggu, 1 = Senin, dst.).  
-- `mnth` → Bulan dalam tahun (1 = Januari, 12 = Desember).  
+2.  **Instal Semua Kebutuhan (Dependensi):**
+    Pastikan Python dan `pip` sudah terpasang. Lalu, jalankan perintah sakti ini:
+    ```bash
+    pip install pandas matplotlib seaborn streamlit ploty
+    ```
+
+3.  **Jalankan Aplikasi Streamlit:**
+    Buka terminal Anda, arahkan ke direktori proyek, dan ketik perintah ajaib ini:
+    ```bash
+    streamlit run dashboard/dashboard.py
+    ```
+    *(Jangan lupa ganti `dashboard.py` dengan nama file Python dashboard Anda, contoh: `dashboard_sepeda.py`)*
+
+4.  **Dashboard Siap Diakses di Browser!** 🌐
+    Streamlit akan otomatis membuka dashboard di *browser* web Anda.
+# 📂 Pastikan dataset tersedia
+
+
+## 🌍 Akses Dashboard
+Setelah menjalankan perintah di atas, 🖥️ Streamlit akan memberikan URL lokal (https://wquqvx6ddfpbvkykbesyzw.streamlit.app/).
+Buka URL tersebut di  browser untuk melihat dashboard 🚲.  
 
 ---
 
