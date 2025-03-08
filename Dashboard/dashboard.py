@@ -7,8 +7,8 @@ from babel.numbers import format_currency
 sns.set(style='dark')
 
 # Load dataset
-hour_df = pd.read_csv("data/hour.csv")
-day_df = pd.read_csv("data/day.csv")
+hour_df = pd.read_csv("Data/hour.csv")
+day_df = pd.read_csv("Data/day.csv")
 
 # Konversi tanggal
 hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
