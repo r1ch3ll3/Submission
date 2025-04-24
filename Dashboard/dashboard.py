@@ -21,7 +21,7 @@ st.markdown(
         background-color: #B0C4DE; 
     }
     [data-testid="stAppViewContainer"]{
-        background-color: #B0E0E6;
+        background-color: #d1ecf0;
     }
     </style>
     """,
