@@ -85,3 +85,5 @@ Buka URL tersebut di  browser untuk melihat dashboard 🚲.
 💡 **Selamat menganalisis data penyewaan sepeda! 🚴‍♂️📊**  
 
 ---
+
+**© 2025 Richelle Vania Thionanda. All Rights Reserved.**
