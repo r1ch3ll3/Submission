@@ -16,7 +16,7 @@ day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 
 # --- Sidebar ---
 with st.sidebar:
-    logo_path = "bike_rental_logo.png"
+    logo_path = "Dashboard/bike_rental_logo.png"
     if os.path.exists(logo_path):
         st.image(logo_path, width=200)
     else:
