@@ -15,27 +15,27 @@ hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 
 # --- Sidebar ---
-# Tambahkan logo di sini
-logo_path = "bike_rental_logo.png"
-if os.path.exists(logo_path):
-    st.sidebar.image(logo_path, width=100)
-else:
-    st.sidebar.warning(f"File logo tidak ditemukan di: {logo_path}")
+with st.sidebar:
+    logo_path = "bike_rental_logo.png"  # Ganti dengan nama file logo Anda
+    if os.path.exists(logo_path):
+        st.image(logo_path, width=200)  # Tampilkan logo dengan lebar 200 piksel
+    else:
+        st.warning(f"File logo tidak ditemukan di: {logo_path}")
 
-st.sidebar.header("Filter Data")
-start_date = st.sidebar.date_input("Tanggal Mulai", hour_df["dteday"].min())
-end_date = st.sidebar.date_input("Tanggal Akhir", hour_df["dteday"].max())
+    st.header("Filter Data")
+    start_date = st.date_input("Tanggal Mulai", hour_df["dteday"].min())
+    end_date = st.date_input("Tanggal Akhir", hour_df["dteday"].max())
 
-# Filter Musim
-seasons = st.sidebar.multiselect(
-    "Pilih Musim (WAJIB: Pilih Semua)",
-    options=["Spring", "Summer", "Fall", "Winter"],
-    default=["Spring", "Summer", "Fall", "Winter"]
-)
+    # Filter Musim
+    seasons = st.multiselect(
+        "Pilih Musim (WAJIB: Pilih Semua)",
+        options=["Spring", "Summer", "Fall", "Winter"],
+        default=["Spring", "Summer", "Fall", "Winter"]
+    )
 
-if len(seasons) < 4:
-    st.error("Analisis memerlukan data dari semua musim. Mohon pilih semua opsi.")
-    st.stop() # Stop execution if not all are selected
+    if len(seasons) < 4:
+        st.error("Analisis memerlukan data dari semua musim. Mohon pilih semua opsi.")
+        st.stop() # Stop execution if not all are selected
 
 # Mapping numerik ke nama musim (jika diperlukan)
 season_map = {1: "Spring", 2: "Summer", 3: "Fall", 4: "Winter"}
