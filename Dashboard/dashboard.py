@@ -16,11 +16,16 @@ day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 
 # --- Sidebar ---
 with st.sidebar:
-    logo_path = "Dashboard/bike_rental_logo.png" 
+    logo_path = "bike_rental_logo.png"
     if os.path.exists(logo_path):
-        st.image(logo_path, width=200) 
+        st.image(logo_path, width=200)
     else:
         st.warning(f"File logo tidak ditemukan di: {logo_path}")
+
+    st.markdown("<h2 style='text-align: center;'>Bike Sharing</h2>", unsafe_allow_html=True)
+    # Atau bisa juga menggunakan:
+    # st.subheader("Bike Sharing")
+    # if you use st.subheader, no need for unsafe_allow_html
 
     st.header("Filter Data")
     start_date = st.date_input("Tanggal Mulai", hour_df["dteday"].min())
