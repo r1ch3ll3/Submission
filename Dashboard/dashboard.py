@@ -14,6 +14,22 @@ day_df = pd.read_csv("Data/day.csv")
 hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 
+# --- CSS untuk Latar Belakang ---
+st.markdown(
+    """
+    <style>
+    [data-testid="stSidebar"] {
+        background-color: #f0f8ff; 
+    }
+    [data-testid="stAppViewContainer"]{
+        background-color: #e0f2f7;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+
 # --- Sidebar ---
 with st.sidebar:
     col1, col2, col3 = st.columns([1, 2, 1])  # Contoh rasio lebar kolom
