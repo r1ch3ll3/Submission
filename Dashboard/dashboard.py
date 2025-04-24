@@ -19,7 +19,7 @@ with st.sidebar:
     col1, col2, col3 = st.columns([1, 2, 1])  # Contoh rasio lebar kolom
 
     with col2:
-        logo_path = "bike_rental_logo.png"
+        logo_path = "bike_sharing_logo.png"
         if os.path.exists(logo_path):
             st.image(logo_path, width=200)
         else:
