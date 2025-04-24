@@ -8,11 +8,6 @@ from babel.numbers import format_currency
 hour_df = pd.read_csv("Data/hour.csv")
 day_df = pd.read_csv("Data/day.csv")
 
-# Display an image from a local file
-st.image("bike_rental_logo.png", width=200)
-
-st.header("Dashboard Overview")
-
 # Konversi tanggal
 hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
