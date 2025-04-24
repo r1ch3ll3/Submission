@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
+from PIL import Image
 
 # Load dataset
 hour_df = pd.read_csv("Data/hour.csv")
