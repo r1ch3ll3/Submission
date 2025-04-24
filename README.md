@@ -35,11 +35,12 @@ pip install numpy pandas scipy matplotlib seaborn jupyter streamlit babel
 ### 2️⃣ **Struktur Direktori**  
 Pastikan struktur direktori proyek seperti berikut:  
 ```
-📂 Bike-Sharing-Dashboard
+📂 Dashboard
  ┣ 📜 dashboard.py
+ ┣ 📜 bike_sharing_logo
  ┣ 📜 day.csv
- ┣ 📂 data
- ┃ ┗ 📜 day.csv
+ 📂 data
+   ┗ 📜 day.csv
    ┗ 📜 hour.csv
  ┣ 📜 Notebook.ipynb
  ┣ 📜 README.md
@@ -66,7 +67,7 @@ Pastikan struktur direktori proyek seperti berikut:
 3.  **Jalankan Aplikasi Streamlit:**
     Buka terminal Anda, arahkan ke direktori proyek, dan ketik perintah ajaib ini:
     ```bash
-    streamlit run dashboard/dashboard.py
+    streamlit run Dashboard/dashboard.py
     ```
     *(Jangan lupa ganti `dashboard.py` dengan nama file Python dashboard Anda, contoh: `dashboard_sepeda.py`)*
 
