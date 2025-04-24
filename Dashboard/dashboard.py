@@ -19,6 +19,14 @@ day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 
 # --- Sidebar ---
 st.sidebar.header("Filter Data")
+# Tambahkan logo di sini
+logo_path = "bike_rental_logo.png" 
+try:
+    logo = Image.open(logo_path)
+    st.sidebar.image(logo, width=100)
+except FileNotFoundError:
+    st.sidebar.warning(f"File logo tidak ditemukan di: {logo_path}")
+
 start_date = st.sidebar.date_input("Tanggal Mulai", hour_df["dteday"].min())
 end_date = st.sidebar.date_input("Tanggal Akhir", hour_df["dteday"].max())
 
@@ -37,7 +45,6 @@ if len(seasons) < 4:
 season_map = {1: "Spring", 2: "Summer", 3: "Fall", 4: "Winter"}
 hour_df["season_name"] = hour_df["season"].map(season_map)
 day_df["season_name"] = day_df["season"].map(season_map)
-
 
 # Filter data
 # Filter data
