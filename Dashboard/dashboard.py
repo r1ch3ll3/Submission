@@ -14,15 +14,14 @@ day_df = pd.read_csv("Data/day.csv")
 hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 
-# --- CSS untuk Latar Belakang ---
 st.markdown(
     """
     <style>
     [data-testid="stSidebar"] {
-        background-color: #B0C4DE;
+        background-color: #B0C4DE; /* Steel Blue */
     }
     [data-testid="stAppViewContainer"]{
-        background-color: #B0E0E6F;
+        background-color: #B0E0E6; /* Light Powder Blue */
     }
     </style>
     """,
