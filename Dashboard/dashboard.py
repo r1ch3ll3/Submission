@@ -16,9 +16,9 @@ day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 
 # --- Sidebar ---
 with st.sidebar:
-    logo_path = "bike_rental_logo.png"  # Ganti dengan nama file logo Anda
+    logo_path = "Dashboard/bike_rental_logo.png" 
     if os.path.exists(logo_path):
-        st.image(logo_path, width=200)  # Tampilkan logo dengan lebar 200 piksel
+        st.image(logo_path, width=200) 
     else:
         st.warning(f"File logo tidak ditemukan di: {logo_path}")
 
