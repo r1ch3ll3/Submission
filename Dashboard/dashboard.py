@@ -15,11 +15,10 @@ day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 
 # --- Sidebar ---
 # Tambahkan logo di sini
-logo_path = "bike_rental_logo.png" 
-try:
-    logo = Image.open(logo_path)
-    st.sidebar.image(logo, width=100)
-except FileNotFoundError:
+logo_path = "bike_rental_logo.png"
+if os.path.exists(logo_path):
+    st.sidebar.image(logo_path, width=100)
+else:
     st.sidebar.warning(f"File logo tidak ditemukan di: {logo_path}")
 
 st.sidebar.header("Filter Data")
