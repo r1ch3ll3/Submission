@@ -223,11 +223,13 @@ casual_rentals = hour_df["casual"].sum()
 registered_rentals = hour_df["registered"].sum()
 
 fig5, ax5 = plt.subplots(figsize=(8, 8))
+colors = ['steelblue', 'powderblue']  
 ax5.pie(
     [casual_rentals, registered_rentals],
     labels=["Casual", "Registered"],
     autopct="%1.1f%%",
     startangle=90,
+    colors=colors  # Apply the colors
 )
 ax5.set_title("Distribusi Jenis Penyewa")
 st.pyplot(fig5)
@@ -246,7 +248,7 @@ st.header("Pengaruh Jam terhadap Penyewaan")
 hourly_rentals = hour_df.groupby("hr")["cnt"].mean()
 
 fig6, ax6 = plt.subplots(figsize=(12, 6))
-ax6.plot(hourly_rentals.index, hourly_rentals.values, marker="o", color="green")
+ax6.plot(hourly_rentals.index, hourly_rentals.values, marker="o", color="steelblue")
 ax6.set_title("Rata-rata Penyewaan Sepeda per Jam")
 ax6.set_xlabel("Jam (0-23)")
 ax6.set_ylabel("Rata-rata Penyewaan")
