@@ -18,7 +18,7 @@ st.markdown(
     """
     <style>
     [data-testid="stSidebar"] {
-        background-color: #4682B4; 
+        background-color: #5B8BB3; 
     }
     [data-testid="stAppViewContainer"]{
         background-color: #D1ECF0;
