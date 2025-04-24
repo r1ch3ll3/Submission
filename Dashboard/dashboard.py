@@ -18,10 +18,10 @@ st.markdown(
     """
     <style>
     [data-testid="stSidebar"] {
-        background-color: #B0C4DE; /* Steel Blue */
+        background-color: #B0C4DE; 
     }
     [data-testid="stAppViewContainer"]{
-        background-color: #B0E0E6; /* Light Powder Blue */
+        background-color: #B0E0E6;
     }
     </style>
     """,
