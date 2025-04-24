@@ -19,10 +19,14 @@ end_date = st.sidebar.date_input("Tanggal Akhir", hour_df["dteday"].max())
 
 # Filter Musim
 seasons = st.sidebar.multiselect(
-    "Pilih Musim",
+    "Pilih Musim (WAJIB: Pilih Semua)",
     options=["Spring", "Summer", "Fall", "Winter"],
-    default=["Spring", "Summer", "Fall", "Winter"],
+    default=["Spring", "Summer", "Fall", "Winter"]
 )
+
+if len(seasons) < 4:
+    st.error("Analisis memerlukan data dari semua musim. Mohon pilih semua opsi.")
+    st.stop() # Stop execution if not all are selected
 
 # Mapping numerik ke nama musim (jika diperlukan)
 season_map = {1: "Spring", 2: "Summer", 3: "Fall", 4: "Winter"}
